@@ -41,7 +41,7 @@ export default function Home() {
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition"
+              className="bg-white shadow-md rounded-xs p-6 text-center hover:shadow-lg transition"
             >
               <div className="text-blue-600 text-4xl mb-4">{item.icon}</div>
               <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
@@ -78,7 +78,7 @@ export default function Home() {
           ].map((unit, i) => (
           <div
   key={i}
-  className="bg-white w-full shadow-md rounded-sm overflow-hidden hover:shadow-lg transition"
+  className="bg-white w-full shadow-md rounded-xs overflow-hidden hover:shadow-lg transition"
 >
   <div className="relative w-full h-48">
     <Image
@@ -89,10 +89,10 @@ export default function Home() {
     />
   </div>
 
-  <div className="p-6">
-    <h3 className="font-semibold mb-2">{unit.title}</h3>
-    <p className="text-gray-600 text-sm mb-4">{unit.desc}</p>
-    <button className="text-blue-600 font-semibold hover:underline">
+  <div className="p-6 flex flex-col ">
+    <h3 className="font-semibold mb-2 text-sky-600  tracking-tighter">{unit.title}</h3>
+    <p className="text-gray-600 text-sm mb-4 tracking-tighter" >{unit.desc}</p>
+    <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold hover:underline">
       Learn More
     </button>
   </div>
@@ -100,7 +100,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      {/* <section className="bg-gray-50 py-16 px-6 w-full">
+      <section className="bg-gray-50 py-16 px-6 w-full">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
           WHAT OUR CUSTOMERS ARE SAYING
         </h2>
@@ -108,14 +108,19 @@ export default function Home() {
           {[1, 2, 3].map((_, i) => (
             <div key={i} className="bg-white rounded-xl shadow-md p-6">
               <p className="text-gray-600 mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Tempus ultrices velit viverra vestibulum.
+                Through them, we got all our offices cleaned. It was fast, affordable and also well done.
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-gray-300" />
+               <Image
+                  src="/ceo.jfif"
+                  alt="Logo"
+                  width={45}
+                  height={45}
+                  className="rounded-full object-contain bg-neutral-200"
+                />
                 <div>
-                  <p className="font-semibold">Lorem ipsum</p>
-                  <p className="text-sm text-gray-500">dolor sit amet</p>
+                  <p className="font-semibold">Mr. Ayodele Joshua</p>
+                  <p className="text-sm text-gray-500">CEO Proximity, Inc.</p>
                 </div>
               </div>
             </div>
@@ -123,15 +128,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full bg-blue-900 text-white text-center py-20 px-4">
+      <section  style={{ backgroundImage: "linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('/contact_banner.jpg')" }} className="w-full bg-cover text-white text-center py-20 px-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Reach Out to Us</h2>
         <p className="text-lg mb-8 max-w-xl mx-auto">
           Let’s handle all your company’s projects for you at an affordable cost with quality delivery.
         </p>
-        <button className="bg-white text-blue-900 font-semibold px-6 py-3 rounded-md hover:bg-gray-100">
+        <button className="bg-white text-blue-900 font-semibold px-6 py-3 rounded-xs hover:bg-gray-100">
           Contact Us
         </button>
-      </section> */}
+      </section>
     </main>
   );
 }
