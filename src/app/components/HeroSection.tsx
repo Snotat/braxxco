@@ -2,9 +2,8 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-cover bg-center h-[500px] w-full flex items-center justify-center text-white" 
-         // Styling for the blue overlay and background image
-         style={{ backgroundImage: "linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('/hero_img.jpg')" }}>
+    <div className="relative bg-cover bg-center h-[500px] mt-[10] w-full flex items-center justify-center text-white" 
+          style={{ backgroundImage: "linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('/hero_img.jpg')" }}>
       
       <div className="text-center px-4 max-w-4xl">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-2">
