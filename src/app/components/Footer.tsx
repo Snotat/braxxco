@@ -7,7 +7,7 @@ import { FaFacebookF } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className='w-full py-5 flex  align-middle shadow-lg text-base space-y-4 font-semibold justify-center items-center  flex-col bg-gray-10'>
+    <div className='w-full py-5 flex  align-middle shadow-lg text-base space-y-4 font-semibold justify-center items-center  flex-col bg-gray-100'>
         
               <div className="relative w-14 h-14 max-md:w-10 max-md:h-10"> {/* Tailwind controls width & height */}
           <Image

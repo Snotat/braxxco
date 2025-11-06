@@ -26,7 +26,7 @@ const page = () => {
       <section className="w-full bg-white py-16 px-6">
         <div className="grid md:grid-cols-3 max-w-6xl mx-auto text-center">
           {/* Visit Us */}
-          <div className="flex flex-col items-center px-6 md:border-r border-neutral-700 last:border-none">
+          <div className="flex flex-col items-center px-6 py-5 md:border-r max-md:border-b border-neutral-700 last:border-none">
             <div className="bg-sky-100 p-4 rounded-full mb-4">
               <FaLocationDot className="text-sky-600 w-8 h-8"/> 
             </div>
@@ -44,7 +44,7 @@ const page = () => {
           </div>
 
           {/* Call Us */}
-          <div className="flex flex-col items-center px-6 md:border-r border-neutral-700 last:border-none">
+          <div className="flex flex-col items-center px-6  py-5 md:border-r max-md:border-b  border-neutral-700 last:border-none">
             <div className="bg-sky-100 p-4 rounded-full mb-4">
               <PiPhoneCallFill className="text-sky-600 w-8 h-8" />
             </div>
@@ -62,8 +62,7 @@ const page = () => {
             </div>
           </div>
 
-          {/* Email Us */}
-          <div className="flex flex-col items-center px-6">
+          <div className="flex flex-col items-center px-6 py-5" >
             <div className="bg-sky-100 p-4 rounded-full mb-4">
               <IoMail className="text-sky-600 w-8 h-8" />
             </div>

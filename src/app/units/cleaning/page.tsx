@@ -1,48 +1,48 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
-const consultancyServices = [
-  {
-    title: "Company Registration",
-    img: "/business_reg.jpg",
-    desc: "We handle company registration and business name setup through CAC efficiently.",
-  },
-  {
-    title: "CAC Annual Return",
-    img: "/cac.png",
-    desc: "Annual CAC return filing and documentation for all registered businesses.",
-  },
-  {
-    title: "Taxpromax Registration",
-    img: "/firs.png",
-    desc: "Register your company on the FIRS Taxpromax platform to manage taxes seamlessly.",
-  },
-  {
-    title: "TIN Generation",
-    img: "/tin.jpg",
-    desc: "We help individuals and organizations generate Tax Identification Numbers.",
-  },
-  {
-    title: "Processing Statement of Account",
-    img: "/statement.jpg",
-    desc: "We assist in preparing and processing accurate financial statements for businesses.",
-  },
-  {
-    title: "Tax Clearance Processing",
-    img: "/tax.jpg",
-    desc: "Get your tax clearance certificates processed without stress or delay.",
-  },
-  {
-    title: "Filing of Monthly/Annual Tax Returns",
-    img: "/filing.jpg",
-    desc: "We file your monthly and annual tax returns with FIRS and State IRS.",
-  },
-  {
-    title: "Processing of PENCOM Clearance Certificate",
-    img: "/pencom.jpg",
-    desc: "We process PENCOM certificates for government and private contractors.",
-  },
-];
+const cleaningServices = [
+  { 
+    title: "Office/Industrial Cleaning", 
+    img: "/clean_1.webp", 
+    desc: "Comprehensive cleaning services tailored for corporate offices, factories, and industrial sites to maintain a healthy and compliant workspace.", 
+  }, 
+  { 
+    title: "General House Cleaning", 
+    img: "/clean_2.jpg", 
+    desc: "Thorough cleaning of residential properties, including dusting, vacuuming, mopping, and sanitizing common areas and bedrooms.", 
+  }, 
+  { 
+    title: "Garbage Evacuation & Environmental Sanitation", 
+    img: "/clean_3.jpg", 
+    desc: "Scheduled waste removal, secure disposal, and complete sanitation services to keep neighborhoods and commercial areas clean and hygienic.", 
+  }, 
+  { 
+    title: "Drainage Cleaning & Disinfections", 
+    img: "/clean_4.jpg", 
+    desc: "Professional clearing of blocked drains, sewage lines, and gutters, followed by powerful disinfection to eliminate pathogens and odors.", 
+  }, 
+  { 
+    title: "Specialized Roofs & Windows Cleaning", 
+    img: "/clean_5.jpg", 
+    desc: "Safe and effective cleaning for high-level structures, including deep cleaning of roofs, gutters, and multi-story exterior windows.", 
+  }, 
+  { 
+    title: "Real Estate Cleaning", 
+    img: "/clean_6.jpg", 
+    desc: "Detailed cleaning services for properties before listing, during viewings, and after a sale (move-in/move-out cleaning).", 
+  }, 
+  { 
+    title: "Pre/Post Construction Cleaning", 
+    img: "/clean_7.jpg", 
+    desc: "Removal of construction debris, dust, and residue, preparing newly built or renovated spaces for final inspection and occupancy.", 
+  }, 
+  { 
+    title: "Structural Cleaning & Painting", 
+    img: "/clean_8.avif", 
+    desc: "Maintenance and restoration services, including deep cleaning of building exteriors, walls, and professional repainting services.", 
+  }, 
+]
 
 const otherUnits = [
   {
@@ -51,9 +51,9 @@ const otherUnits = [
     desc: "We provide agricultural consultancy, mechanized farming support, and supply services.",
   },
   {
-    title: "Cleaning and Facility Management Unit",
-    img: "/cleaner_consult.png",
-    desc: "Professional cleaning and facility management services for homes and businesses.",
+    title: "Consultancy Unit",
+    img: "/consultant.jpg",
+    desc: "We provide business consulting and strategy development.",
   },
   {
     title: "Information and Communication Technology (ICT) Unit",
@@ -66,13 +66,13 @@ const page = () => {
      <div className="min-h-screen bg-gray-50  mt-20 max-md:mt-12">
       {/* Hero Section */}
       <section   style={{ backgroundImage: "linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('/consultant.jpg')" }} className="bg-cover bg-top text-white py-20 px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-3">Consultancy Unit</h1>
-        <p className="text-lg">Our Consultancy Unit has the following Services.</p>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-3">Cleaning Unit</h1>
+        <p className="text-lg">Our Cleaning Unit has the following Services.</p>
       </section>
 
       {/* Consultancy Grid */}
       <section className="h-full max-w-7xl space-x-3 space-y-3 mx-auto px-4 py-10 justify-center item-center flex flex-row flex-wrap">
-        {consultancyServices.map((item, i) => (
+        {cleaningServices.map((item, i) => (
           <div
             key={i}
             className="bg-white shadow-md hover:shadow-lg w-full flex flex-1 flex-col  min-w-60 max-w-80  rounded-md overflow-hidden transition"
@@ -91,7 +91,7 @@ const page = () => {
             </div>
           </div>
         ))}
-        <div className="bg-blue-950 shadow-md hover:shadow-lg rounded-md overflow-hidden transition flex-1 min-w-96 min-h-72 flex flex-row align-middle items-center justify-center max-w-6xl">
+        <div className="bg-blue-950 shadow-md hover:shadow-lg rounded-md overflow-hidden transition flex-1 min-w-96 min-h-72 flex flex-row align-middle items-center justify-center max-w-4xl">
             <span className='w-full p-5 flex flex-col my-auto self-center'>  <p className="text-white text-2xl max-md:text-xl font-bold mb-4">You Want <br/> to Experience <br/> the Best Service</p>
              <Link href='/contact'> <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
       Contact Us
