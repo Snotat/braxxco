@@ -78,7 +78,7 @@ export default function Home() {
           ].map((unit, i) => (
           <div
   key={i}
-  className="bg-white w-full shadow-md rounded-xs overflow-hidden hover:shadow-lg transition"
+  className="bg-white w-full shadow-md rounded-xs overflow-hidden hover:shadow-lg transition pb-5"
 >
   <div className="relative w-full h-48">
     <Image
@@ -89,7 +89,7 @@ export default function Home() {
     />
   </div>
 
-  <div className="p-6 flex flex-col ">
+  <div className="p-3 flex flex-col ">
     <h3 className="font-semibold mb-2 text-sky-600  tracking-tighter">{unit.title}</h3>
     <p className="text-gray-600 text-sm mb-4 tracking-tighter" >{unit.desc}</p>
     <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
