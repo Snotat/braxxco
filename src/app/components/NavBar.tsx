@@ -27,7 +27,7 @@ const NavBar = () => {
              <span onClick={()=>setUnitsec(!unitsec)} className='hover:text-sky-600 flex flex-row align-middle items-center justify-center cursor-pointer'  > <span>Units</span>  <span className=''>{unitsec?<IoMdArrowDropup  className='ml-1' />:<IoMdArrowDropdown className='ml-1' />}</span></span>
            { unitsec&&<div className='w-fit h-fit flex flex-col space-y-3 border border-neutral-950/10 bg-white top-10 shadow-lg  -right-5 text-start align-middle rounded-sm justify-center p-4 pr-6 text-nowrap  absolute'>
                 <Link href='/units/consultancy' className='hover:text-sky-600 '>Consultancy Unit</Link>
-                <Link href='/units/agric' className='hover:text-sky-600 ' >Agricultural Unit</Link>
+                <Link href='/units/agric' className='hover:text-sky-600 ' >Agriculture Unit</Link>
                 <Link href='/units/cleaning' className='hover:text-sky-600 ' >Cleaning Unit</Link>
                 <Link href='/units/ict' className='hover:text-sky-600 ' >ICT Unit</Link>
              </div>
