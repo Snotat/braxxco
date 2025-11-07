@@ -114,9 +114,9 @@ export default function Home() {
                <Image
                   src="/ceo.jfif"
                   alt="Logo"
-                  width={45}
-                  height={45}
-                  className="rounded-full object-contain bg-neutral-200"
+                  width={50}
+                  height={50}
+                  className="rounded-full object-contain bg-neutral-500"
                 />
                 <div>
                   <p className="font-semibold">Mr. Ayodele Joshua</p>

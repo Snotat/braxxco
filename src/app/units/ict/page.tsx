@@ -46,18 +46,19 @@ const otherUnits = [
     desc: "Professional cleaning and facility management services for homes and businesses.",
   },
   {
-    title: "Information and Communication Technology (ICT) Unit",
-    img: "/ict_consult.png",
-    desc: "We offer ICT services including web development, networking, and software development.",
+    title: "Consultancy Unit",
+    img: "/consultant.jpg",
+    desc: "We provide business consulting and strategy development.",
   },
 ];
+
 const page = () => {
   return (
      <div className="min-h-screen bg-gray-50  mt-20 max-md:mt-12">
       {/* Hero Section */}
       <section   style={{ backgroundImage: "linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('/consultant.jpg')" }} className="bg-cover bg-top text-white py-20 px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-3">Consultancy Unit</h1>
-        <p className="text-lg">Our Consultancy Unit has the following Services.</p>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-3">ICT Unit</h1>
+        <p className="text-lg">Our ICT Unit has the following Services.</p>
       </section>
 
       {/* Consultancy Grid */}
