@@ -91,7 +91,7 @@ const page = () => {
             </div>
           </div>
         ))}
-        <div className="bg-blue-950 shadow-md hover:shadow-lg rounded-md overflow-hidden transition flex-1 min-w-96 min-h-72 flex flex-row align-middle items-center justify-center max-w-4xl">
+        <div className="bg-blue-950 shadow-md hover:shadow-lg rounded-md overflow-hidden transition flex-1 min-w-96 min-h-72 w-full flex flex-row align-middle items-center justify-center max-w-4xl">
             <span className='w-full p-5 flex flex-col my-auto self-center'>  <p className="text-white text-2xl max-md:text-xl font-bold mb-4">You Want <br/> to Experience <br/> the Best Service</p>
              <Link href='/contact'> <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
       Contact Us
