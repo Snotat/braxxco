@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-cover bg-center h-[500px] mt-[10] w-full flex items-center justify-center text-white" 
+    <div className="relative bg-cover bg-center h-[500px] mt-20 max-md:mt-12 w-full flex items-center justify-center text-white" 
           style={{ backgroundImage: "linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('/hero_img.jpg')" }}>
       
       <div className="text-center px-4 max-w-4xl">
