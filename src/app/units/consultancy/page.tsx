@@ -71,11 +71,11 @@ const page = () => {
       </section>
 
       {/* Consultancy Grid */}
-      <section className="h-full max-w-7xl space-x-3 space-y-3 mx-auto px-4 py-10 justify-center item-center flex flex-row flex-wrap">
+      <section className="h-full max-w-7xl space-x-3 space-y-3 mx-auto px-4 py-10 justify-center item-center flex flex-row flex-wrap align-middle" >
         {consultancyServices.map((item, i) => (
           <div
             key={i}
-            className="bg-white shadow-md hover:shadow-lg w-full flex flex-1 flex-col  min-w-60 max-w-80  rounded-md overflow-hidden transition"
+            className="bg-white shadow-md hover:shadow-lg w-full flex flex-1 flex-col  min-w-60 max-w-80 mx-auto rounded-md overflow-hidden transition" 
           >
             <Image
               src={item.img}
@@ -91,7 +91,7 @@ const page = () => {
             </div>
           </div>
         ))}
-        <div className="bg-blue-950 shadow-md hover:shadow-lg rounded-md overflow-hidden transition flex-1 min-w-96 min-h-72 w-full flex flex-row align-middle items-center justify-center max-w-6xl">
+        <div className="bg-blue-950 shadow-md hover:shadow-lg rounded-md overflow-hidden transition flex-1 min-w-80 min-h-72 w-full flex flex-row align-middle items-center justify-center max-w-6xl">
             <span className='w-full p-5 flex flex-col my-auto self-center'>  <p className="text-white text-2xl max-md:text-xl font-bold mb-4">You Want <br/> to Experience <br/> the Best Service</p>
              <Link href='/contact'> <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
       Contact Us

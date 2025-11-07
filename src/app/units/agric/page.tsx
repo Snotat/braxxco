@@ -101,7 +101,7 @@ const page = () => {
       {/* Other Units */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
         <h2 className="text-3xl font-extrabold mb-8 text-gray-900">OTHER UNITS</h2>
-        <div className="h-full max-w-7xl space-x-3 space-y-3 mx-auto px-4 py-10 justify-center item-center flex flex-row flex-wrap">
+        <div className="h-full max-w-7xl space-x-3 space-y-3 mx-auto px-4 py-10 justify-center item-center flex flex-row flex-wrap ">
           {otherUnits.map((unit, i) => (
             <div
               key={i}
