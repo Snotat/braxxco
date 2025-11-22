@@ -26,7 +26,7 @@ const page = () => {
       <section className="w-full bg-white py-16 px-6">
         <div className="grid md:grid-cols-3 max-w-6xl mx-auto text-center">
           {/* Visit Us */}
-          <div className="flex flex-col items-center px-6 py-5 md:border-r max-md:border-b border-neutral-700 last:border-none">
+          <div className="flex flex-col items-center px-6 py-5 md:border-r max-md:border-b border-gray-300 last:border-none">
             <div className="bg-sky-100 p-4 rounded-full mb-4">
               <FaLocationDot className="text-sky-600 w-8 h-8"/> 
             </div>
@@ -44,7 +44,7 @@ const page = () => {
           </div>
 
           {/* Call Us */}
-          <div className="flex flex-col items-center px-6  py-5 md:border-r max-md:border-b  border-neutral-700 last:border-none">
+          <div className="flex flex-col items-center px-6  py-5 md:border-r max-md:border-b  border-gray-300 last:border-none">
             <div className="bg-sky-100 p-4 rounded-full mb-4">
               <PiPhoneCallFill className="text-sky-600 w-8 h-8" />
             </div>
@@ -71,7 +71,7 @@ const page = () => {
               Make enquiries from us through our email
             </p>
             <a
-              href="admin@braxxco.com"
+              href="mailto:admin@braxxco.com"
               className="text-sky-600 font-medium hover:underline"
             >
              admin@braxxco.com

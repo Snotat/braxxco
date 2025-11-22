@@ -1,3 +1,4 @@
+import { link } from 'fs';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
@@ -49,16 +50,19 @@ const otherUnits = [
     title: "Agricultural and Allied Unit",
     img: "/agric_consult.jpg",
     desc: "We provide agricultural consultancy, mechanized farming support, and supply services.",
+    link:'/units/agric'
   },
   {
     title: "Consultancy Unit",
     img: "/consultant.jpg",
     desc: "We provide business consulting and strategy development.",
+    link:'/units/consultancy'
   },
   {
     title: "Information and Communication Technology (ICT) Unit",
     img: "/ict_consult.png",
     desc: "We offer ICT services including web development, networking, and software development.",
+    link:'/units/ict'
   },
 ];
 const page = () => {
@@ -106,7 +110,7 @@ const page = () => {
       </section>
 
       {/* Divider */}
-      <hr className="border-t border-gray-300 max-w-6xl mx-auto my-12" />
+      <hr className="border-t border-gray-400 max-w-6xl mx-auto my-12" />
 
       {/* Other Units */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
@@ -127,9 +131,9 @@ const page = () => {
               <div className="p-3">
                 <h3 className="font-semibold mb-2">{unit.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{unit.desc}</p>
-              <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
+         <Link href={unit.link}>     <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
       Learn More
-    </button>
+    </button></Link>
               </div>
             </div>
           ))}

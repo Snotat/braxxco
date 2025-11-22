@@ -39,16 +39,19 @@ const otherUnits = [
     title: "Cleaning and Facility Management Unit",
     img: "/cleaner_consult.png",
     desc: "Professional cleaning and facility management services for homes and businesses.",
+  link:'/units/cleaning'
   },
   {
     title: "Consultancy Unit",
     img: "/consultant.jpg",
     desc: "We provide business consulting and strategy development.",
+    link:'/units/consultancy'
   },
   {
     title: "Information and Communication Technology (ICT) Unit",
     img: "/ict_consult.png",
     desc: "We offer ICT services including web development, networking, and software development.",
+    link:'/units/ict'
   },
 ];
 const page = () => {
@@ -117,9 +120,9 @@ const page = () => {
               <div className="p-3">
                 <h3 className="font-semibold mb-2">{unit.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{unit.desc}</p>
-              <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
+           <Link href={unit.link}>   <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
       Learn More
-    </button>
+    </button></Link>
               </div>
             </div>
           ))}

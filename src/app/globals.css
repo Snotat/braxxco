@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 @import "tailwindcss";
 
 * {
   box-sizing: border-box;
+  font-family: "Paprika", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }

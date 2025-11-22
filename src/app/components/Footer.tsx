@@ -11,7 +11,7 @@ const Footer = () => {
         
               <div className="relative w-14 h-14 max-md:w-10 max-md:h-10"> {/* Tailwind controls width & height */}
           <Image
-            src="/logo.jpeg"
+            src="/logo.png"
             alt="Logo"
             fill
             className="object-contain"

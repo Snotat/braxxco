@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import { FaBriefcase } from "react-icons/fa";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { FaPeopleGroup } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,11 +11,12 @@ export default function Home() {
 <HeroSection/>
 
       {/* About Section */}
-      <section className="py-16 px-6 max-w-6xl text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">WELCOME TO BRAXXCO-REX</h2>
-        <p className="text-gray-700 leading-relaxed">
-          We are: Gen. Contractor, Suppliers of Goods, Company Reg, TCC, SCUML, PENCOM, ITF, NSITF, NMDPRA License & Comp Profile development,
-          ICT, Media & Publicity Consults, Logistics, Project Management & Monitoring, Property Agent, Cleaning, Landscape, and more.
+      <section className="py-10 px-[3%] max-w-5xl text-center">
+        <h2 className="text-xl md:text-2xl font-bold mb-4">WELCOME TO BRAXXCO-REX</h2>
+        <p className="text-gray-600 leading-relaxed text-justify flex flex-row md:gap-[3%] gap-3 max-md:flex-col ">
+       <span className="w-full">Our goal at Braxxco Rex Consultancy Limited is to empower organisations by making business management and development less complicated. True consulting, in our opinion, goes beyond theory and necessitates a practical dedication to the day-to-day realities that sustain a business.  We remove the operational bottlenecks that frequently impede progress by providing a diverse range of services, giving our clients the flexibility they need to change, grow, and take the lead in their respective fields.</span> 
+
+<span className="w-full">We fulfil this promise by skilfully fusing technical expertise with administrative rigour.  With timely tax returns, PENCOM processing, and regulatory compliance, our consulting team protects your reputation and builds a strong foundation for expansion.  Our technical divisions simultaneously strive to improve your operational capability, from creating reliable software systems to overseeing successful agricultural projects to keeping facilities clean.  Every service we offer at Braxxco Rex contributes to your long-term profitability and sustainability.</span>
         </p>
       </section>
 
@@ -58,22 +60,26 @@ export default function Home() {
             {
               title: "Consultancy Unit",
               desc: "We provide business consulting and strategy development.",
-              image:'/consultant.jpg'
+              image:'/consultant.jpg',
+              link:'/units/consultancy'
             },
             {
               title: "Agricultural and Allied Unit",
               desc: "Focusing on agribusiness, farm management, and production.",
-              image:'/agric_consult.jpg'
+              image:'/agric_consult.jpg',
+              link:'/units/agric'
             },
             {
               title: "Cleaning and Facility Management Unit",
               desc: "Offering professional cleaning and maintenance services.",
-              image:'/cleaner_consult.png'
+              image:'/cleaner_consult.png',
+              link:'/units/cleaning'
             },
             {
               title: "ICT Unit",
               desc: "Handling IT infrastructure, web services, and software development.",
-              image:'/ict_consult.png'
+              image:'/ict_consult.png',
+              link:'/units/ict'
             },
           ].map((unit, i) => (
           <div
@@ -92,9 +98,9 @@ export default function Home() {
   <div className="p-3 flex flex-col ">
     <h3 className="font-semibold mb-2 text-sky-600  tracking-tighter">{unit.title}</h3>
     <p className="text-gray-600 text-sm mb-4 tracking-tighter" >{unit.desc}</p>
-    <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
+  <Link href={unit.link}> <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
       Learn More
-    </button>
+    </button></Link> 
   </div>
 </div>
           ))}
@@ -133,9 +139,10 @@ export default function Home() {
         <p className="text-lg mb-8 max-w-xl mx-auto">
           Let’s handle all your company’s projects for you at an affordable cost with quality delivery.
         </p>
+        <Link href='/contact'>
         <button className="bg-white text-blue-900 font-semibold px-6 py-3 rounded-xs hover:bg-gray-100">
           Contact Us
-        </button>
+        </button></Link>
       </section>
     </main>
   );

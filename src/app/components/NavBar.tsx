@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState } from 'react';
-import logo from '../../../public/logo.jpeg'
+import logo from '../../../public/logo.png'
 import Link from 'next/link';
 import { IoMdArrowDropdown, IoMdArrowDropup } from 'react-icons/io';
 
@@ -12,7 +12,7 @@ const NavBar = () => {
   <nav className="w-full mx-auto px-[5%] border-b border-neutral-950/10 h-fit py-3 max-md:py-1 shadow-lg fixed flex bg-white align-middle z-100 top-0 left-0 right-0 flex-row space-x-[10%] justify-between items-center">
       <div className="relative w-14 h-14 max-md:w-10 max-md:h-10"> {/* Tailwind controls width & height */}
   <Image
-    src="/logo.jpeg"
+    src="/logo.png"
     alt="Logo"
     fill
     className="object-contain cursor-pointer"

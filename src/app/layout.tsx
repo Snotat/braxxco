@@ -4,19 +4,17 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Braxxco-Rex Consultant Limited",
-  description: "Business problems consultant",
+  description: "Business problems consultant",icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32' },
+      { url: '/favicon-16x16.png', sizes: '16x16' }
+    ],
+    apple: '/apple-touch-icon.png',
+    
+  }
 };
 
 export default function RootLayout({
@@ -27,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full bg-white relative`}
+        className={` h-full bg-white relative`}
       >
         <NavBar />
         {children}

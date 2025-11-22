@@ -39,16 +39,19 @@ const otherUnits = [
     title: "Agricultural and Allied Unit",
     img: "/agric_consult.jpg",
     desc: "We provide agricultural consultancy, mechanized farming support, and supply services.",
+    link:'/units/agric'
   },
   {
     title: "Cleaning and Facility Management Unit",
     img: "/cleaner_consult.png",
     desc: "Professional cleaning and facility management services for homes and businesses.",
+    link:'/units/cleaning'
   },
   {
     title: "Consultancy Unit",
     img: "/consultant.jpg",
     desc: "We provide business consulting and strategy development.",
+    link:'/units/consultancy'
   },
 ];
 
@@ -62,11 +65,11 @@ const page = () => {
       </section>
 
       {/* Consultancy Grid */}
-      <section className="h-full max-w-7xl space-x-3 space-y-3 mx-auto px-4 py-10 justify-center item-center flex flex-row flex-wrap align-middle">
+      <section className="h-full max-w-7xl space-x-3 space-y-3 mx-auto px-4 py-10 justify-center item-center flex flex-row flex-wrap">
         {itServices.map((item, i) => (
           <div
             key={i}
-            className="bg-white shadow-md hover:shadow-lg w-full flex flex-1 flex-col  min-w-60 max-w-80  rounded-md overflow-hidden transition mx-auto"
+            className="bg-white shadow-md hover:shadow-lg w-full flex flex-1 flex-col  min-w-60 max-w-80  rounded-md overflow-hidden transition"
           >
             <Image
               src={item.img}
@@ -118,9 +121,9 @@ const page = () => {
               <div className="p-3">
                 <h3 className="font-semibold mb-2">{unit.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{unit.desc}</p>
-              <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
+        <Link href={unit.link}>    <button className="text-white bg-sky-600 float-left w-fit p-2 px-4 mt-0 rounded-xs hover:bg-gray-700 hover:text-white font-semibold">
       Learn More
-    </button>
+    </button></Link>  
               </div>
             </div>
           ))}
