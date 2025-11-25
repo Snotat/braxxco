@@ -115,7 +115,7 @@ const page = () => {
           {otherUnits.map((unit, i) => (
             <div
               key={i}
-              className="bg-white shadow-md hover:shadow-lg w-full flex flex-1 flex-col  min-w-60 max-w-80  rounded-md overflow-hidden transition"
+              className="bg-white shadow-md hover:shadow-lg w-full flex flex-1 flex-col  min-w-60 max-w-80  rounded-md overflow-hidden transition "
             >
               <Image
                 src={unit.img}

@@ -6,6 +6,22 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Home() {
+
+const testimonial = [
+  {name:'MD. Solomon Omale.',
+    company:"Chubitex Petroleum Products Ltd.,",
+    picture:'',
+testimony:"Our corporate documents and profile are updated and competitive."
+
+  },
+  {name:'MD., Paul M. Geoffrey,',
+    company:"Expert Assist Limited.",
+    picture:'',
+testimony:"Timely services delivered worthy of recommendation to anyone."
+
+  }
+]
+
   return (
         <main className="flex flex-col items-center">
 <HeroSection/>
@@ -111,22 +127,22 @@ export default function Home() {
           WHAT OUR CUSTOMERS ARE SAYING
         </h2>
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {[1, 2, 3].map((_, i) => (
+          {testimonial.map((res, i) => (
             <div key={i} className="bg-white rounded-xl shadow-md p-6">
               <p className="text-gray-600 mb-6">
-                Through them, we got all our offices cleaned. It was fast, affordable and also well done.
+                {res.testimony}
               </p>
-              <div className="flex items-center gap-4">
-               <Image
-                  src="/ceo.jfif"
+              <div className="flex items-center gap-4 mb-0">
+              {res.picture&&<Image
+                  src={res.picture||"/ceo.jfif"}
                   alt="Logo"
                   width={50}
                   height={50}
                   className="rounded-full object-contain bg-neutral-500"
-                />
+                />} 
                 <div>
-                  <p className="font-semibold">Mr. Ayodele Joshua</p>
-                  <p className="text-sm text-gray-500">CEO Proximity, Inc.</p>
+                  <p className="font-bold">{res.name}</p>
+                  <p className="text-sm text-gray-500">{res.company}</p>
                 </div>
               </div>
             </div>
