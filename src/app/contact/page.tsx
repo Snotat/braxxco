@@ -54,10 +54,13 @@ const page = () => {
             </p>
             <div className="flex flex-col text-sky-600 font-medium">
               <a href="tel:+234812345678" className="hover:underline">
-                +234812345678
+                +2348022005200
               </a>
               <a href="tel:+234905736256" className="hover:underline">
-                +234912345678
+                +2349066329975
+              </a>
+              <a href="tel:+234905736256" className="hover:underline">
+                +2349038561538
               </a>
             </div>
           </div>
@@ -75,6 +78,12 @@ const page = () => {
               className="text-sky-600 font-medium hover:underline"
             >
              admin@braxxco.com
+            </a>
+            <a
+              href="mailto:braxxcorexconsult@gmail.com"
+              className="text-sky-600 font-medium hover:underline"
+            >
+             braxxcorexconsult@gmail.com
             </a>
           </div>
         </div>
